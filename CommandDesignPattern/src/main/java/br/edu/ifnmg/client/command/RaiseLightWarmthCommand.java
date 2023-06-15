@@ -4,15 +4,15 @@
  */
 package br.edu.ifnmg.client.command;
 
-import br.edu.ifnmg.client.objects.Light;
+import br.edu.ifnmg.client.objects.Lamp;
 
 /**
  *
  * @author maicon
  */
 public class RaiseLightWarmthCommand extends LightCommand{
-
-    public RaiseLightWarmthCommand(Light light) {
+    
+    public RaiseLightWarmthCommand(Lamp light) {
         super(light);
     }
     

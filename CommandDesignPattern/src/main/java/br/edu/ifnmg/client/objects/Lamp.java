@@ -8,14 +8,14 @@ package br.edu.ifnmg.client.objects;
  *
  * @author maicon
  */
-public class Light {
+public class Lamp {
     
     private String name;
     
     private int warmth;
     private boolean status;
 
-    public Light(String name, int warmth, boolean status) {
+    public Lamp(String name, int warmth, boolean status) {
         this.name = name;
         this.warmth = warmth;
         this.status = status;

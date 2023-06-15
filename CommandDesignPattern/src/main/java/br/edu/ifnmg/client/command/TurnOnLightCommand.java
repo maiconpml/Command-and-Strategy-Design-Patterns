@@ -4,7 +4,7 @@
  */
 package br.edu.ifnmg.client.command;
 
-import br.edu.ifnmg.client.objects.Light;
+import br.edu.ifnmg.client.objects.Lamp;
 
 /**
  *
@@ -12,7 +12,7 @@ import br.edu.ifnmg.client.objects.Light;
  */
 public class TurnOnLightCommand extends LightCommand{
 
-    public TurnOnLightCommand(Light light) {
+    public TurnOnLightCommand(Lamp light) {
         super(light);
     }
 

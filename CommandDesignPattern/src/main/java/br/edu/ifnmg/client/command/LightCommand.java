@@ -4,7 +4,7 @@
  */
 package br.edu.ifnmg.client.command;
 
-import br.edu.ifnmg.client.objects.Light;
+import br.edu.ifnmg.client.objects.Lamp;
 
 /**
  *
@@ -12,9 +12,9 @@ import br.edu.ifnmg.client.objects.Light;
  */
 public abstract class LightCommand implements ICommand{
     
-    protected final Light light;
+    protected final Lamp light;
 
-    protected LightCommand(Light light) {
+    protected LightCommand(Lamp light) {
         this.light = light;
     }
 }

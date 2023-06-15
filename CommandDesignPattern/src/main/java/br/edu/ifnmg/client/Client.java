@@ -9,7 +9,7 @@ import br.edu.ifnmg.client.command.ReduceLightWarmthCommand;
 import br.edu.ifnmg.client.command.TurnOffLightCommand;
 import br.edu.ifnmg.client.command.TurnOnLightCommand;
 import br.edu.ifnmg.client.objects.Controller;
-import br.edu.ifnmg.client.objects.Light;
+import br.edu.ifnmg.client.objects.Lamp;
 
 /**
  *
@@ -19,7 +19,7 @@ public class Client {
 
     public static void main(String[] args) {
         
-        var light1 = new Light("CeilBedroomLight", 4000, false);
+        var light1 = new Lamp("CeilBedroomLight", 4000, false);
         
         var bedroomLightsController = new Controller(new TurnOnLightCommand(light1), new TurnOffLightCommand(light1), new RaiseLightWarmthCommand(light1), new ReduceLightWarmthCommand(light1));
         
