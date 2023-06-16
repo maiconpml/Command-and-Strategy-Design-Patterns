@@ -10,21 +10,21 @@ import br.edu.ifnmg.client.objects.Lamp;
  *
  * @author maicon
  */
-public class ReduceLightWarmthCommand extends LightCommand {
+public class TurnOnLampCommand extends LampCommand{
 
-    public ReduceLightWarmthCommand(Lamp light) {
-        super(light);
+    public TurnOnLampCommand(Lamp lamp) {
+        super(lamp);
     }
 
     @Override
     public final void execute() {
-
-        light.reduceWarmth();
+        
+        lamp.turnOn();
     }
 
     @Override
     public final void unexecute() {
-
-        light.raiseWarmth();
+        
+        lamp.turnOff();
     }
 }

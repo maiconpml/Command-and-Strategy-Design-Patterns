@@ -10,21 +10,21 @@ import br.edu.ifnmg.client.objects.Lamp;
  *
  * @author maicon
  */
-public class TurnOffLightCommand extends LightCommand{
+public class TurnOffLampCommand extends LampCommand{
 
-    public TurnOffLightCommand(Lamp light) {
-        super(light);
+    public TurnOffLampCommand(Lamp lamp) {
+        super(lamp);
     }
 
     @Override
     public final void execute() {
         
-        light.turnOff();
+        lamp.turnOff();
     }
 
     @Override
     public final void unexecute() {
         
-        light.turnOn();
+        lamp.turnOn();
     }
 }

@@ -10,11 +10,11 @@ import br.edu.ifnmg.client.objects.Lamp;
  *
  * @author maicon
  */
-public abstract class LightCommand implements ICommand{
+public abstract class LampCommand implements ICommand{
     
-    protected final Lamp light;
+    protected final Lamp lamp;
 
-    protected LightCommand(Lamp light) {
-        this.light = light;
+    protected LampCommand(Lamp lamp) {
+        this.lamp = lamp;
     }
 }
