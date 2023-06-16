@@ -16,14 +16,12 @@ public class Controller {
     private ICommand button1;
     private ICommand button2;
     private ICommand button3;
-    private ICommand button4;
     private Stack<ICommand> history;
     
-    public Controller(ICommand button1, ICommand button2, ICommand button3, ICommand button4) {
+    public Controller(ICommand button1, ICommand button2, ICommand button3) {
         this.button1 = button1;
         this.button2 = button2;
         this.button3 = button3;
-        this.button4 = button4;
         history = new Stack();
     }
 
@@ -39,10 +37,6 @@ public class Controller {
         this.button3 = button3;
     }
 
-    public void setButton4(ICommand button4) {
-        this.button4 = button4;
-    }
-
     public ICommand getButton1() {
         return button1;
     }
@@ -53,10 +47,6 @@ public class Controller {
 
     public ICommand getButton3() {
         return button3;
-    }
-
-    public ICommand getButton4() {
-        return button4;
     }
 
     public void clickButton1() {
@@ -73,13 +63,8 @@ public class Controller {
         history.push(button3);
         button3.execute();
     }
-
-    public void clickButton4() {
-        history.push(button4);
-        button4.execute();
-    }
     
-    public void undoOperation(){
+    public void undoButton(){
         if(history.empty()) return;
         
         history.pop().unexecute();
